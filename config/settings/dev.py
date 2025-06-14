@@ -4,8 +4,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # Puedes acceder desde cualquier IP/localhost
 
-# Base de datos para desarrollo (usa SQLite por defecto)
-# Si necesitas otra base de datos, aquí puedes sobrescribir DATABASES
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Products_Registry',
+        'USER': 'postgres',
+        'PASSWORD': 'ucuenca',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
-# Email por consola para pruebas
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
