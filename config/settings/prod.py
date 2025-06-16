@@ -4,7 +4,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['tu-dominio.com', 'www.tu-dominio.com']
 
-# Configura base de datos real aquí si no usas SQLite
+# Configuracio de base de datos real aquí (para producción) si no se usa SQLite
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
