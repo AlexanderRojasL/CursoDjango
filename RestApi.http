@@ -1,0 +1,40 @@
+### Listar todos los productos (GET)
+GET http://localhost:8000/api/products/
+Accept: application/json
+
+###
+
+### Crear un nuevo producto (POST)
+POST http://localhost:8000/api/products/
+Content-Type: application/json
+
+{
+  "name": "Teclado mecánico",
+  "price": 49.99,
+  "category": "Accesorios",
+  "stock": 25
+}
+
+###
+
+### Obtener un producto por ID (GET)
+GET http://localhost:8000/api/products/2/
+Accept: application/json
+
+###
+
+### Actualizar completamente un producto (PUT)
+PUT http://localhost:8000/api/products/1/
+Content-Type: application/json
+
+{
+  "name": "Teclado retroiluminado",
+  "price": 59.99,
+  "category": "Accesorios",
+  "stock": 30
+}
+
+###
+
+### Eliminar un producto (DELETE)
+DELETE http://localhost:8000/api/products/1/
